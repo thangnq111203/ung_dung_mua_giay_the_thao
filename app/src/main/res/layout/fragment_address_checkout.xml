@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvListNull"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/list_null_text"
+        android:textColor="@color/primary_black"
+        android:textSize="@dimen/text_size_16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/cvButton"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toTopOf="@id/cvButton"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24dp"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dimen_32dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_address_checkout" />
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24dp"
+        app:cardCornerRadius="@dimen/dimen_100dp"
+        app:cardElevation="@dimen/dimen_1dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dimen_16dp"
+            android:singleLine="true"
+            android:text="@string/add_address_checkout_title"
+            android:textColor="@color/primary_white"
+            android:textSize="@dimen/text_size_16sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

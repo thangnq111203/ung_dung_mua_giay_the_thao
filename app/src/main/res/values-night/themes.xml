@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Shoes_app" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/colorOnPrimary </item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.Shoes_app" parent="Base.Theme.Shoes_app" />
+
+    <style name="TextStyleBottomNavActive">
+        <item name="android:textSize">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_3dp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:color">@color/primary_black</item>
+        <item name="android:adjustViewBounds">false</item>
+    </style>
+
+    <style name="TextStyleBottomNavInactive">
+        <item name="android:textSize">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_3dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:color">@color/gray_600</item>
+        <item name="android:adjustViewBounds">false</item>
+    </style>
+
+    <style name="success">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#61C566</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#4CAF50</item>
+        <item name="stIconStart">@drawable/baseline_star_24</item>
+        <item name="stIconEnd">@drawable/baseline_check_circle_outline_24</item>
+        <item name="stLength">SHORT</item>
+        <item name="stRadius">5dp</item>
+    </style>
+    <style name="fail">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#FF0000</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stIconStart">@drawable/baseline_info_outline_24</item>
+        <item name="stLength">SHORT</item>
+        <item name="stRadius">50dp</item>
+    </style>
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

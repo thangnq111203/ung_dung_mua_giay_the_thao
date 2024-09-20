@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/dimen_32dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/category_text"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_category_selected_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/price_range_text"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtMin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray_100"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/min_text"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:minHeight="@dimen/dimen_50dp"
+                    android:padding="@dimen/dimen_10dp"
+                    android:paddingVertical="@dimen/dimen_14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textColorHint="@color/gray_300"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtMax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/gray_100"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/max_text"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:minHeight="@dimen/dimen_50dp"
+                    android:padding="@dimen/dimen_10dp"
+                    android:paddingVertical="@dimen/dimen_14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textColorHint="@color/gray_300"
+                    android:textSize="@dimen/text_size_12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/sort_by_text"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvSortBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_category_selected_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/rating_text"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_category_selected_view" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dimen_100dp"
+                    app:cardElevation="@null">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReset"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_100"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/dimen_16dp"
+                        android:singleLine="true"
+                        android:text="@string/reset_button"
+                        android:textColor="@color/primary_black"
+                        android:textSize="@dimen/text_size_16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dimen_100dp"
+                    app:cardElevation="@null">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvApply"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_button"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/dimen_16dp"
+                        android:singleLine="true"
+                        android:text="@string/apply_button"
+                        android:textColor="@color/primary_white"
+                        android:textSize="@dimen/text_size_16sp" />
+                </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

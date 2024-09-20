@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/bg_edt_search"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_14dp"
+            android:layout_weight="1"
+            android:background="@color/gray_100"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/search"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:minHeight="@dimen/dimen_50dp"
+            android:paddingVertical="@dimen/dimen_14dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_black"
+            android:textColorHint="@color/gray_300"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="?actionBarItemBackground"
+            android:paddingHorizontal="@dimen/dimen_14dp"
+            app:srcCompat="@drawable/ic_filter" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSearch"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:textColor="@color/primary_black"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintEnd_toStartOf="@id/tvItemSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutSearch"
+        tools:text="Vui lòng nhập tên sản phẩm" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvItemSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/primary_black"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSearch"
+        tools:text="20 sản phẩm" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSearch">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvShoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_14dp"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dimen_32dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/item_shoe_view" />
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

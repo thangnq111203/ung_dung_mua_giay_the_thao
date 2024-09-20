@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_toolbar"
+    tools:context=".framework.presentation.ui.profile.editProfile.EditProfileFragment"
+    tools:ignore="SpUsage">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:boxStrokeColor="@color/primary_black"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/gray_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edt_config_info"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:hint="@string/full_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/primary_black"
+            android:textSize="@dimen/text_size_14sp"
+            app:hintTextColor="@color/gray_600"
+            tools:ignore="VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:boxStrokeColor="@color/primary_black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconDrawable="@drawable/baseline_date_range_24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/primary_black"
+        app:hintTextColor="@color/gray_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edt_config_info"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:hint="@string/date"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/primary_black"
+            android:textSize="@dimen/text_size_14sp"
+            app:hintTextColor="@color/gray_600"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputMail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:boxStrokeColor="@color/primary_black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconDrawable="@drawable/baseline_attach_email_24"
+        app:endIconMode="custom"
+        app:hintTextColor="@color/gray_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputDate"
+        tools:ignore="VisualLintBounds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edt_config_info"
+            android:hint="@string/your_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/primary_black"
+            android:textSize="@dimen/text_size_14sp"
+            app:hintTextColor="@color/gray_600"
+            tools:ignore="VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:boxStrokeColor="@color/primary_black"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/gray_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputMail"
+        tools:ignore="VisualLintBounds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_edt_config_info"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:hint="@string/phone_config"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/primary_black"
+            android:textSize="@dimen/text_size_14sp"
+            app:hintTextColor="@color/gray_600"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@drawable/border_edt_config_info"
+        android:padding="@dimen/dimen_17dp"
+        app:boxStrokeColor="@color/primary_black"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/gray_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputPhone"
+        tools:ignore="VisualLintBounds" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_24dp"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        app:cardCornerRadius="@dimen/dimen_100dp"
+        app:cardElevation="@dimen/dimen_1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNextPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dimen_16dp"
+            android:singleLine="true"
+            android:text="@string/update"
+            android:textColor="@color/primary_white"
+            android:textSize="@dimen/text_size_14sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+[33m06c9a3d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mquylh_main[m[33m)[m HEAD@{0}: reset: moving to HEAD^
+[33mf907615[m HEAD@{1}: checkout: moving from thangnq to quylh_main
+[33m6fa4a6e[m[33m ([m[1;32mthangnq[m[33m)[m HEAD@{2}: checkout: moving from quylh_main to thangnq
+[33mf907615[m HEAD@{3}: checkout: moving from thangnq to quylh_main
+[33m6fa4a6e[m[33m ([m[1;32mthangnq[m[33m)[m HEAD@{4}: checkout: moving from quylh_main to thangnq
+[33mf907615[m HEAD@{5}: commit (merge): update UI
+[33m06c9a3d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mquylh_main[m[33m)[m HEAD@{6}: commit: update UI
+[33m0751b5d[m[33m ([m[1;31morigin/quylh_main[m[33m)[m HEAD@{7}: pull --no-stat -v --progress origin quylh_main: Fast-forward
+[33mf05f2ba[m HEAD@{8}: checkout: moving from main to quylh_main
+[33m9d860ca[m[33m ([m[1;32mmain[m[33m)[m HEAD@{9}: merge origin/main: Merge made by the 'ort' strategy.
+[33mef50824[m HEAD@{10}: commit (merge): Merge remote-tracking branch 'origin/main'
+[33m35bbf1d[m HEAD@{11}: pull --no-stat -v --progress origin main: updating HEAD
+[33m35bbf1d[m HEAD@{12}: checkout: moving from thangnq to main
+[33m6fa4a6e[m[33m ([m[1;32mthangnq[m[33m)[m HEAD@{13}: commit (merge): Merge branch 'development' of https://github.com/KimCong2k1/Client_Shoe into thangnq
+[33m1e8e88b[m HEAD@{14}: commit: update ui icon part 6
+[33ma504e15[m HEAD@{15}: commit: update ui icon part 6
+[33me58b3a3[m HEAD@{16}: commit: update
+[33mdc31baa[m HEAD@{17}: commit: update XML
+[33m9e40eef[m HEAD@{18}: commit: update XML
+[33m8f54218[m HEAD@{19}: commit: update XML
+[33m509b923[m HEAD@{20}: commit: update XML
+[33m35bbf1d[m HEAD@{21}: checkout: moving from main to thangnq
+[33m35bbf1d[m HEAD@{22}: rebase: checkout main
+[33mb2e3158[m HEAD@{23}: checkout: moving from add_home_screen to development
+[33me086b32[m[33m ([m[1;31morigin/add_home_screen[m[33m)[m HEAD@{24}: checkout: moving from main to add_home_screen
+[33m35bbf1d[m HEAD@{25}: rebase: checkout main
+[33me086b32[m[33m ([m[1;31morigin/add_home_screen[m[33m)[m HEAD@{26}: checkout: moving from development to add_home_screen
+[33mb2e3158[m HEAD@{27}: checkout: moving from main to development
+[33m35bbf1d[m HEAD@{28}: reset: moving to HEAD
+[33m35bbf1d[m HEAD@{29}: checkout: moving from thangnq to main
+[33m35bbf1d[m HEAD@{30}: checkout: moving from main to thangnq
+[33m35bbf1d[m HEAD@{31}: commit: update cart & order
+[33m2aebc2b[m[33m ([m[1;31morigin/quy_update-UI[m[33m)[m HEAD@{32}: pull: Fast-forward
+[33mb078bd2[m HEAD@{33}: pull --no-stat -v --progress origin main: Fast-forward
+[33m0def3c6[m HEAD@{34}: checkout: moving from thang18 to main
+[33m9056feb[m HEAD@{35}: pull --no-stat -v --progress origin thang17: Fast-forward
+[33m0def3c6[m HEAD@{36}: checkout: moving from main to thang18
+[33m0def3c6[m HEAD@{37}: checkout: moving from thang17 to main
+[33m9056feb[m HEAD@{38}: commit: update XML cart dialog
+[33m93fa4d3[m HEAD@{39}: commit: update part2
+[33m4b79bf3[m HEAD@{40}: commit: update
+[33m85ab231[m HEAD@{41}: commit: update XML part 2
+[33mc570c4f[m HEAD@{42}: commit: new branch
+[33m0def3c6[m HEAD@{43}: checkout: moving from main to thang17
+[33m0def3c6[m HEAD@{44}: clone: from https://github.com/KimCong2k1/Client_Shoe.git

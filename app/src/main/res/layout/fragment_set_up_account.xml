@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".framework.presentation.ui.setUpAccount.SetUpAccountFragment"
+    tools:ignore="SpUsage,ContentDescription">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/backgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/color_nav_primary"
+        app:navigationIcon="@drawable/baseline_keyboard_backspace_24"
+        app:navigationIconTint="@color/color_nav_primary"
+        app:title="Chỉnh sửa thông tin cá nhân" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@drawable/circular_background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            app:cardCornerRadius="@dimen/dimen_4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_create_24" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:boxStrokeColor="@color/text_color_primary"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/color_nav_primary"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative"
+        tools:ignore="DuplicateIds,MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:background="@drawable/border_edt_config_info"
+            android:hint="@string/full_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:padding="@dimen/dimen_17dp"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        app:endIconDrawable="@drawable/baseline_date_range_24"
+        app:endIconMode="custom"
+        app:boxStrokeColor="@color/text_color_primary"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/color_nav_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputName"
+        tools:ignore="DuplicateIds,MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:focusable="false"
+            android:hint="@string/date"
+            android:background="@drawable/border_edt_config_info"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputMail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        app:endIconDrawable="@drawable/baseline_attach_email_24"
+        app:endIconMode="custom"
+        app:boxStrokeColor="@color/text_color_primary"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/color_nav_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputDate"
+        tools:ignore="DuplicateIds,MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:hint="@string/your_email"
+            android:enabled="false"
+            android:background="@drawable/border_edt_config_info"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutInputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        app:boxStrokeColor="@color/text_color_primary"
+        app:boxStrokeErrorColor="@color/red"
+        app:hintTextColor="@color/color_nav_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputMail"
+        tools:ignore="DuplicateIds,MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:hint="@string/phone_config"
+            android:imeOptions="actionNext"
+            android:background="@drawable/border_edt_config_info"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="@dimen/dimen_17dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:background="@drawable/border_edt_config_info"
+        android:padding="@dimen/dimen_17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputPhone"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnNextPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/color_nav_primary"
+        android:text="@string/text_continue"
+        android:textColor="@color/color_nav_secondary"
+        android:textSize="@dimen/dimen_15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

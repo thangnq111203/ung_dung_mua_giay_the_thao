@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_place">Enter place</string>
+    <string name="noData">Không có dữ liệu</string>
+    <string name="titleShoeFbee">Thông báo mới từ ShoeFbee</string>
+    <string name="messageShoeFbee">Nội dung mới từ ShoeFbee</string>
+    <string name="darkMode">Chế độ tối</string>
+    <string name="enterpPlace">Enter place</string>
+    <string name="contact">Thông tin liên hệ</string>
+    <string name="store1">Cửa hàng số 1:</string>
+</resources>

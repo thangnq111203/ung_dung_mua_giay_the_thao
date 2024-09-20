@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fpoly.shoes_app.framework.presentation.MainActivity">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:orderInCategory="100"
+        android:title="@string/home"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/favoritesFragment"
+        android:icon="@drawable/ic_favorite"
+        android:orderInCategory="100"
+        android:title="@string/favorites"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/ic_cart"
+        android:orderInCategory="100"
+        android:title="@string/cart"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/ic_order"
+        android:orderInCategory="100"
+        android:title="@string/orders"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="100"
+        android:title="@string/profile"
+        app:showAsAction="withText" />
+</menu>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".framework.presentation.ui.checkout.CheckoutFragment">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShippingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/shipping_address"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp"
+                app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvAddress"
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_50dp"
+                    app:cardCornerRadius="@dimen/dimen_50dp"
+                    app:cardElevation="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/primary_black"
+                        android:paddingHorizontal="@dimen/dimen_15dp"
+                        app:srcCompat="@drawable/ic_address" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddressNull"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/choose_address_title"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imgNextAddress"
+                    app:layout_constraintStart_toEndOf="@id/cvAddress"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tvAddress"
+                    app:layout_constraintEnd_toStartOf="@id/imgNextAddress"
+                    app:layout_constraintStart_toEndOf="@id/cvAddress"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Nguyễn Văn A" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:maxLines="2"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toTopOf="@id/tvPhone"
+                    app:layout_constraintEnd_toStartOf="@id/imgNextAddress"
+                    app:layout_constraintStart_toEndOf="@id/cvAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvName"
+                    tools:text="số 1 ngõ 1, Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imgNextAddress"
+                    app:layout_constraintStart_toEndOf="@id/cvAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvAddress"
+                    tools:text="0987654321" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNextAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_margin="@dimen/dimen_24dp"
+                android:background="@color/gray_300" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/order_list"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvListCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_my_cart" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_margin="@dimen/dimen_24dp"
+                android:background="@color/gray_300" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvChooseShipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/choose_shipping"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutShipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvShip"
+                    android:layout_width="@dimen/dimen_35dp"
+                    android:layout_height="@dimen/dimen_35dp"
+                    app:cardCornerRadius="@dimen/dimen_50dp"
+                    app:cardElevation="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgShipping"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/selected_shipping"
+                        android:contentDescription="@null"
+                        android:paddingHorizontal="@dimen/dimen_7dp"
+                        app:srcCompat="@drawable/ic_ship" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvShip"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/choose_shipping_title"
+                    android:textColor="@color/selected_shipping"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvPriceShip"
+                    app:layout_constraintStart_toEndOf="@id/cvShip"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPriceShip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imgNextShip"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="30000đ" />
+
+                <ImageView
+                    android:id="@+id/imgNextShip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/selected_shipping" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_margin="@dimen/dimen_24dp"
+                android:background="@color/gray_300" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/promo_code"
+                android:textColor="@color/primary_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvDiscount"
+                    android:layout_width="@dimen/dimen_35dp"
+                    android:layout_height="@dimen/dimen_35dp"
+                    app:cardCornerRadius="@dimen/dimen_50dp"
+                    app:cardElevation="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/primary_black"
+                        android:paddingHorizontal="@dimen/dimen_10dp"
+                        app:srcCompat="@drawable/ic_discount" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDiscount"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/promo_code_title"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imgClear"
+                    app:layout_constraintStart_toEndOf="@id/cvDiscount"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:adjustViewBounds="true"
+                    android:background="?actionBarItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imgNextDiscount"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNextDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24dp"
+                android:layout_marginVertical="@dimen/dimen_35dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAmountTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/amount_text"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAmountTotal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvAmountTotal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmountTotal"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtAmountTotal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1000000đ" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtShipTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/shipping_text"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvShipTotal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvShipTotal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvShipTotal"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtShipTotal"
+                    app:layout_constraintTop_toBottomOf="@id/tvAmountTotal"
+                    tools:text="30000đ" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDiscountTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/discount_text"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvDiscountTotal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvDiscountTotal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDiscountTotal"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtDiscountTotal"
+                    app:layout_constraintTop_toBottomOf="@id/tvShipTotal"
+                    tools:text="20000đ" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/total_text"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvTotal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvTotal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_black"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtTotal"
+                    app:layout_constraintTop_toBottomOf="@id/tvDiscountTotal"
+                    tools:text="1000000đ" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24dp"
+        app:cardCornerRadius="@dimen/dimen_100dp"
+        app:cardElevation="@dimen/dimen_1dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dimen_16dp"
+            android:singleLine="true"
+            android:text="@string/next"
+            android:textColor="@color/primary_white"
+            android:textSize="@dimen/text_size_16sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

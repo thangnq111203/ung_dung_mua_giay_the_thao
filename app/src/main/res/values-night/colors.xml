@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="background_color">#242424</color> <!-- Dark background -->
+    <color name="color_background_toolbar">#242424</color> <!-- Dark background -->
+    <color name="header_background">#242424</color> <!-- Dark header background -->
+
+    <!-- Text colors -->
+    <color name="text_color_primary">#FFFFFF</color> <!-- Dark text color -->
+    <color name="text_color_secondary">#B0B0B0</color> <!-- Dark secondary text color -->
+
+    <!-- Primary color -->
+    <color name="colorPrimary">#BB86FC</color> <!-- Dark primary color -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Darker shade of primary color -->
+
+    <!-- Other colors -->
+    <color name="card_background">#121212</color> <!-- Dark card background -->
+    <color name="border_color">#444444</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#17171A</color>
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#CDCDCD</color>
+    <color name="color_nav_primary">#CDCDCD</color> <!-- Light text color -->
+    <color name="color_nav_secondary">#F6F6F6</color>
+    <!-- Background and Surface Colors -->
+    <color name="backgroundColor">#121212</color>
+    <color name="surfaceColor">#1F1B24</color>
+    <color name="check_color" tools:ignore="MissingDefaultResource">#00BCD4</color> <!-- Cyan for Dark Mode -->
+
+    <!-- Switch Colors -->
+    <color name="colorControlActivated">#BB86FC</color>
+    <color name="colorControlNormal">#484848</color>
+
+    <!-- Additional Colors -->
+    <color name="colorAccent">#03DAC6</color>
+    <color name="windowBackground">#121212</color>
+    <color name="textColor">#E0E0E0</color>
+    <color name="toolbarBackground">#333333</color>
+
+    <!-- Miscellaneous Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_black">#000000</color>
+    <color name="primary_white">#FFFFFF</color>
+    <color name="gray_600">#767676</color>
+    <color name="gray_300">#CDCDCD</color>
+    <color name="gray_200">#ECECEC</color>
+    <color name="gray_100">#F6F6F6</color>
+</resources>

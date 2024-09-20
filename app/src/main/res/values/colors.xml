@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background colors -->
+    <color name="background_color">#FFFFFF</color> <!-- Light background -->
+    <color name="color_background_toolbar">#FFFFFF</color> <!-- Light background -->
+    <color name="header_background">#F0F0F0</color> <!-- Light header background -->
+
+    <!-- Text colors -->
+    <color name="text_color_primary">#000000</color> <!-- Light text color -->
+    <color name="text_color_secondary">#FFFFFF</color> <!-- Light secondary text color -->
+
+ <color name="color_nav_primary">#000000</color> <!-- Light text color -->
+    <color name="color_nav_secondary">#FFFFFF</color> <!-- Light secondary text color -->
+   <color name="check_color">#FF5722</color> <!-- Orange for Light Mode -->
+
+    <!-- Primary color -->
+    <color name="colorPrimary">#FFFFFF</color> <!-- Light primary color -->
+    <color name="colorPrimaryDark">#000000</color> <!-- Darker shade of primary color -->
+
+    <!-- Other colors -->
+    <color name="card_background">#F5F5F5</color> <!-- Light card background -->
+    <color name="border_color">#E0E0E0</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+
+    <!-- Background and Surface Colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#FFFFFF</color>
+
+    <!-- Switch Colors -->
+    <color name="colorControlActivated">#6200EE</color>
+    <color name="colorControlNormal">#BDBDBD</color>
+    <!-- Màu chính của ứng dụng -->
+    <!-- Màu tối hơn của màu chính -->
+    <!-- Màu nổi bật cho các phần tử UI -->
+    <color name="colorAccent">#03DAC5</color>
+    <!-- Màu nền của cửa sổ -->
+    <color name="windowBackground">#FFFFFF</color>
+    <!-- Màu chữ mặc định cho ứng dụng -->
+    <color name="textColor">#000000</color>
+    <!-- Màu nền thanh công cụ cho chế độ sáng -->
+    <color name="toolbarBackground">#FFFFFF</color>
+
+    <!-- Các màu bổ sung -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_black">#222222</color>
+    <color name="primary_white">#FFFFFF</color>
+    <color name="gray_600">#767676</color>
+    <color name="gray_300">#CDCDCD</color>
+    <color name="gray_200">#ECECEC</color>
+    <color name="gray_100">#F6F6F6</color>
+
+
+
+    <!-- Dark theme specific colors -->
+    <color name="colorBackgroundDark">#000000</color> <!-- True black -->
+    <color name="colorTextDark">#FFFFFF</color>
+    <!--    my color quy-->
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="background_color_field">#ACACAE</color>
+    <color name="color_text_action">#5D81C5</color>
+    <color name="red">#F44336</color>
+</resources>
